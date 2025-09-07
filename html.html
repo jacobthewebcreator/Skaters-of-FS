@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skaters of FS | Showcase</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for active tab to have a smooth transition */
+        .tab-button {
+            transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <div class="flex justify-between items-center py-5 border-b border-gray-200">
+                <!-- Site Title -->
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="#">
+                        <span class="sr-only">Skaters of FS</span>
+                        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">Skaters of FS</h1>
+                    </a>
+                </div>
+                <!-- Navigation Tabs -->
+                <nav class="flex items-center space-x-2 sm:space-x-4">
+                    <button id="men-tab" class="tab-button px-3 sm:px-4 py-2 text-base sm:text-lg font-semibold border-b-2 text-blue-600 border-blue-600">
+                        Men
+                    </button>
+                    <button id="women-tab" class="tab-button px-3 sm:px-4 py-2 text-base sm:text-lg font-semibold border-b-2 text-gray-500 border-transparent hover:text-pink-600">
+                        Women
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 sm:px-8 py-10 sm:py-12">
+        
+        <!-- Men's Gallery (Visible by default) -->
+        <div id="men-gallery" class="fade-in">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
+                <!-- Repeat this block for each image -->
+                <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/1e293b/ffffff?text=Men+of+FS" alt="Gallery image from Men of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/334155/ffffff?text=Men+of+FS" alt="Gallery image from Men of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/475569/ffffff?text=Men+of+FS" alt="Gallery image from Men of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/64748b/ffffff?text=Men+of+FS" alt="Gallery image from Men of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/94a3b8/ffffff?text=Men+of+FS" alt="Gallery image from Men of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/1e293b/ffffff?text=Men+of+FS" alt="Gallery image from Men of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/334155/ffffff?text=Men+of+FS" alt="Gallery image from Men of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/475569/ffffff?text=Men+of+FS" alt="Gallery image from Men of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                 <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/64748b/ffffff?text=Men+of+FS" alt="Gallery image from Men of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                 <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/94a3b8/ffffff?text=Men+of+FS" alt="Gallery image from Men of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+            </div>
+        </div>
+
+        <!-- Women's Gallery (Hidden by default) -->
+        <div id="women-gallery" class="hidden">
+             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
+                <!-- Repeat this block for each image -->
+                 <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/4a044e/fbcfe8?text=Women+of+FS" alt="Gallery image from Women of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/86198f/fce7f3?text=Women+of+FS" alt="Gallery image from Women of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                 <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/c026d3/fdf2f8?text=Women+of+FS" alt="Gallery image from Women of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                 <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/db2777/faf5ff?text=Women+of+FS" alt="Gallery image from Women of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                 <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/be185d/fef2f2?text=Women+of+FS" alt="Gallery image from Women of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                 <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/4a044e/fbcfe8?text=Women+of+FS" alt="Gallery image from Women of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                 <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/86198f/fce7f3?text=Women+of+FS" alt="Gallery image from Women of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                 <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/c026d3/fdf2f8?text=Women+of+FS" alt="Gallery image from Women of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                 <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/db2777/faf5ff?text=Women+of+FS" alt="Gallery image from Women of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+                 <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="https://placehold.co/500x500/be185d/fef2f2?text=Women+of+FS" alt="Gallery image from Women of FS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/500x500/1e293b/ffffff?text=Image+Error';">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+        <div class="max-w-7xl mx-auto py-10 px-6 sm:px-8">
+            <div class="text-center">
+                <h3 class="text-lg font-semibold text-gray-800">Follow us on Instagram</h3>
+                <div class="mt-4 flex justify-center items-center space-x-6">
+                    <!-- Men of FS Link -->
+                    <a href="https://www.instagram.com/men_of_fs" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-600 transition-colors duration-300 group flex items-center space-x-2">
+                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.485 2.525c.636-.247 1.363-.416 2.427-.465C9.93 2.013 10.284 2 10.685 2h1.63zm-1.63 2.195c-2.358 0-2.678.01-3.633.056-1.002.046-1.57.2-2.01.385a2.72 2.72 0 00-1.01 1.01c-.185.44-.339 1.008-.385 2.01-.046.955-.056 1.275-.056 3.633s.01 2.678.056 3.633c.046 1.002.2 1.57.385 2.01a2.72 2.72 0 001.01 1.01c.44.185 1.008.339 2.01.385.955.046 1.275.056 3.633.056s2.678-.01 3.633-.056c1.002-.046 1.57-.2 2.01-.385a2.72 2.72 0 001.01-1.01c.185-.44.339-1.008.385-2.01.046-.955.056-1.275.056-3.633s-.01-2.678-.056-3.633c-.046-1.002-.2-1.57-.385-2.01a2.72 2.72 0 00-1.01-1.01c-.44-.185-1.008-.339-2.01-.385-.955-.046-1.275-.056-3.633-.056zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm0 5.64a1.89 1.89 0 110-3.78 1.89 1.89 0 010 3.78zm5.22-5.91a.93.93 0 100-1.86.93.93 0 000 1.86z" clip-rule="evenodd" /></svg>
+                        <span class="font-medium">men_of_fs</span>
+                    </a>
+                    <!-- Women of FS Link -->
+                    <a href="https://www.instagram.com/women_of_fs" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-pink-600 transition-colors duration-300 group flex items-center space-x-2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.485 2.525c.636-.247 1.363-.416 2.427-.465C9.93 2.013 10.284 2 10.685 2h1.63zm-1.63 2.195c-2.358 0-2.678.01-3.633.056-1.002.046-1.57.2-2.01.385a2.72 2.72 0 00-1.01 1.01c-.185.44-.339 1.008-.385 2.01-.046.955-.056 1.275-.056 3.633s.01 2.678.056 3.633c.046 1.002.2 1.57.385 2.01a2.72 2.72 0 001.01 1.01c.44.185 1.008.339 2.01.385.955.046 1.275.056 3.633.056s2.678-.01 3.633-.056c1.002-.046 1.57-.2 2.01-.385a2.72 2.72 0 001.01-1.01c.185-.44.339-1.008.385-2.01.046-.955.056-1.275.056-3.633s-.01-2.678-.056-3.633c-.046-1.002-.2-1.57-.385-2.01a2.72 2.72 0 00-1.01-1.01c-.44-.185-1.008-.339-2.01-.385-.955-.046-1.275-.056-3.633-.056zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm0 5.64a1.89 1.89 0 110-3.78 1.89 1.89 0 010 3.78zm5.22-5.91a.93.93 0 100-1.86.93.93 0 000 1.86z" clip-rule="evenodd" /></svg>
+                        <span class="font-medium">women_of_fs</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 Skaters of FS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Tab Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menTab = document.getElementById('men-tab');
+            const womenTab = document.getElementById('women-tab');
+            const menGallery = document.getElementById('men-gallery');
+            const womenGallery = document.getElementById('women-gallery');
+
+            // Function to switch to Men's tab
+            function showMenGallery() {
+                menGallery.classList.remove('hidden');
+                womenGallery.classList.add('hidden');
+
+                menTab.classList.add('text-blue-600', 'border-blue-600');
+                menTab.classList.remove('text-gray-500', 'border-transparent');
+
+                womenTab.classList.add('text-gray-500', 'border-transparent');
+                womenTab.classList.remove('text-pink-600', 'border-pink-600');
+            }
+
+            // Function to switch to Women's tab
+            function showWomenGallery() {
+                womenGallery.classList.remove('hidden');
+                menGallery.classList.add('hidden');
+
+                womenTab.classList.add('text-pink-600', 'border-pink-600');
+                womenTab.classList.remove('text-gray-500', 'border-transparent');
+                
+                menTab.classList.add('text-gray-500', 'border-transparent');
+                menTab.classList.remove('text-blue-600', 'border-blue-600');
+            }
+
+            // Event Listeners
+            menTab.addEventListener('click', showMenGallery);
+            womenTab.addEventListener('click', showWomenGallery);
+        });
+    </script>
+</body>
+</html>
