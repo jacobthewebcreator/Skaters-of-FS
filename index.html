@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skaters of FS | Showcase</title>
-    
+    <title>Men of FS | Reels Showcase</title>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom Styles -->
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -31,16 +30,15 @@
             <div class="flex justify-between items-center py-5 border-b border-gray-200">
                 <div class="flex justify-start lg:w-0 lg:flex-1">
                     <a href="#">
-                        <span class="sr-only">Skaters of FS</span>
-                        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">Skaters of FS</h1>
+                        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">Men of FS</h1>
                     </a>
                 </div>
                 <nav class="flex items-center space-x-2 sm:space-x-4">
-                    <button id="men-tab" class="tab-button px-3 sm:px-4 py-2 text-base sm:text-lg font-semibold border-b-2 text-blue-600 border-blue-600">
-                        Men
+                    <button id="reels-tab" class="tab-button px-3 sm:px-4 py-2 text-base sm:text-lg font-semibold border-b-2 text-blue-600 border-blue-600">
+                        Reels
                     </button>
-                    <button id="women-tab" class="tab-button px-3 sm:px-4 py-2 text-base sm:text-lg font-semibold border-b-2 text-gray-500 border-transparent hover:text-pink-600">
-                        Women
+                    <button id="images-tab" class="tab-button px-3 sm:px-4 py-2 text-base sm:text-lg font-semibold border-b-2 text-gray-500 border-transparent hover:text-blue-600">
+                        Images
                     </button>
                 </nav>
             </div>
@@ -49,74 +47,59 @@
 
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-6 sm:px-8 py-10 sm:py-12">
-        <!-- Men's Instagram Reels -->
-        <div id="men-gallery" class="fade-in">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
-                <!-- Instagram Reels Embed Codes -->
-                <iframe src="https://www.instagram.com/reel/REEL_ID_1/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true" class="rounded-xl shadow-md"></iframe>
-                <iframe src="https://www.instagram.com/reel/REEL_ID_2/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true" class="rounded-xl shadow-md"></iframe>
-                <iframe src="https://www.instagram.com/reel/REEL_ID_3/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true" class="rounded-xl shadow-md"></iframe>
-                <iframe src="https://www.instagram.com/reel/REEL_ID_4/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true" class="rounded-xl shadow-md"></iframe>
-                <iframe src="https://www.instagram.com/reel/REEL_ID_5/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true" class="rounded-xl shadow-md"></iframe>
+
+        <!-- Reels Gallery -->
+        <div id="reels-gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Replace REEL_ID_1, REEL_ID_2 with actual reel IDs -->
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/REEL_ID_1/" data-instgrm-version="14" style="width:100%; max-width:540px;"></blockquote>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/REEL_ID_2/" data-instgrm-version="14" style="width:100%; max-width:540px;"></blockquote>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/REEL_ID_3/" data-instgrm-version="14" style="width:100%; max-width:540px;"></blockquote>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/REEL_ID_4/" data-instgrm-version="14" style="width:100%; max-width:540px;"></blockquote>
+        </div>
+
+        <!-- Images Gallery -->
+        <div id="images-gallery" class="hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
+            <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                <img src="https://placehold.co/500x500/1e293b/ffffff?text=Men+of+FS" alt="Gallery image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="group aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                <img src="https://placehold.co/500x500/334155/ffffff?text=Men+of+FS" alt="Gallery image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
             </div>
         </div>
 
-        <!-- Women's Gallery (Hidden by default) -->
-        <div id="women-gallery" class="hidden">
-             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
-                <!-- Women's images remain unchanged -->
-            </div>
-        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-white">
-        <div class="max-w-7xl mx-auto py-10 px-6 sm:px-8">
-            <div class="text-center">
-                <h3 class="text-lg font-semibold text-gray-800">Follow us on Instagram</h3>
-                <div class="mt-4 flex justify-center items-center space-x-6">
-                    <a href="https://www.instagram.com/men_of_fs" target="_blank" class="text-gray-500 hover:text-blue-600 transition-colors duration-300 group flex items-center space-x-2">
-                        <span class="font-medium">men_of_fs</span>
-                    </a>
-                    <a href="https://www.instagram.com/women_of_fs" target="_blank" class="text-gray-500 hover:text-pink-600 transition-colors duration-300 group flex items-center space-x-2">
-                        <span class="font-medium">women_of_fs</span>
-                    </a>
-                </div>
-            </div>
-            <div class="mt-8 text-center text-sm text-gray-400">
-                <p>&copy; 2025 Skaters of FS. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Instagram Embed Script -->
+    <script async src="//www.instagram.com/embed.js"></script>
 
-    <!-- JavaScript for Tab Functionality -->
+    <!-- Tab Functionality -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const menTab = document.getElementById('men-tab');
-            const womenTab = document.getElementById('women-tab');
-            const menGallery = document.getElementById('men-gallery');
-            const womenGallery = document.getElementById('women-gallery');
+            const reelsTab = document.getElementById('reels-tab');
+            const imagesTab = document.getElementById('images-tab');
+            const reelsGallery = document.getElementById('reels-gallery');
+            const imagesGallery = document.getElementById('images-gallery');
 
-            function showMenGallery() {
-                menGallery.classList.remove('hidden');
-                womenGallery.classList.add('hidden');
-                menTab.classList.add('text-blue-600', 'border-blue-600');
-                menTab.classList.remove('text-gray-500', 'border-transparent');
-                womenTab.classList.add('text-gray-500', 'border-transparent');
-                womenTab.classList.remove('text-pink-600', 'border-pink-600');
+            function showReels() {
+                reelsGallery.classList.remove('hidden');
+                imagesGallery.classList.add('hidden');
+                reelsTab.classList.add('text-blue-600', 'border-blue-600');
+                reelsTab.classList.remove('text-gray-500', 'border-transparent');
+                imagesTab.classList.add('text-gray-500', 'border-transparent');
+                imagesTab.classList.remove('text-blue-600', 'border-blue-600');
             }
 
-            function showWomenGallery() {
-                womenGallery.classList.remove('hidden');
-                menGallery.classList.add('hidden');
-                womenTab.classList.add('text-pink-600', 'border-pink-600');
-                womenTab.classList.remove('text-gray-500', 'border-transparent');
-                menTab.classList.add('text-gray-500', 'border-transparent');
-                menTab.classList.remove('text-blue-600', 'border-blue-600');
+            function showImages() {
+                imagesGallery.classList.remove('hidden');
+                reelsGallery.classList.add('hidden');
+                imagesTab.classList.add('text-blue-600', 'border-blue-600');
+                imagesTab.classList.remove('text-gray-500', 'border-transparent');
+                reelsTab.classList.add('text-gray-500', 'border-transparent');
+                reelsTab.classList.remove('text-blue-600', 'border-blue-600');
             }
 
-            menTab.addEventListener('click', showMenGallery);
-            womenTab.addEventListener('click', showWomenGallery);
+            reelsTab.addEventListener('click', showReels);
+            imagesTab.addEventListener('click', showImages);
         });
     </script>
 </body>
